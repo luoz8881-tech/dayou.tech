@@ -8,3 +8,20 @@
   gtag('config', '{{ . }}');
 </script>
 {{- end }}
+
+<!-- Favicon emoji -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+
+<!-- OG / 社交分享 -->
+<meta property="og:site_name" content="dayou.tech" />
+<meta property="og:locale" content="zh_CN" />
+{{- if .IsHome }}
+<meta property="og:type" content="website" />
+<meta property="og:title" content="大有 · AI 实践者" />
+<meta property="og:description" content="不写代码的普通人，用 AI 搭网站、连服务器、做自动化。每篇文章都是真实操作记录。" />
+{{- else }}
+<meta property="og:type" content="article" />
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}" />
+{{- end }}
+<meta property="og:url" content="{{ .Permalink }}" />

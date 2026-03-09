@@ -1,0 +1,9 @@
+{{- if not (.Param "hideFooter") }}
+<footer class="footer">
+    <span>© {{ now.Year }} <a href="/">dayou.tech</a></span>
+    <span style="margin: 0 8px; opacity: 0.3;">·</span>
+    <span><a href="/privacy/">隐私政策</a></span>
+    <span style="margin: 0 8px; opacity: 0.3;">·</span>
+    <span><a href="/contact/">联系</a></span>
+</footer>
+{{- end }}
