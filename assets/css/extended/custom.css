@@ -1,5 +1,7 @@
 :root {
   --font-mono: 'SF Mono', 'Fira Code', 'JetBrains Mono', monospace;
+  --accent: #60a5fa;
+  --accent-dim: rgba(96, 165, 250, 0.15);
 }
 
 body {
@@ -8,31 +10,145 @@ body {
   line-height: 1.8;
 }
 
-.post-title {
-  font-weight: 700;
-  letter-spacing: -0.02em;
+/* === Hero === */
+.hero {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 12px;
+}
+.hero-title .dot {
+  color: var(--accent);
+}
+.hero-tagline {
+  font-size: 1.15rem;
+  opacity: 0.9;
+  margin-bottom: 8px;
+}
+.hero-sub {
+  font-size: 0.9rem;
+  opacity: 0.5;
 }
 
-.first-entry {
+/* === Section Cards === */
+.sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 20px 0 40px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.section-card {
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px 20px;
+  text-align: center;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.section-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+.section-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+}
+.section-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.section-card p {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+/* === Latest Posts === */
+.latest-posts {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.section-heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+}
+.post-card {
   border: 1px solid var(--border);
   border-radius: 12px;
-  overflow: hidden;
+  padding: 20px;
+  margin-bottom: 12px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.post-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+.post-card a {
+  text-decoration: none;
+  color: inherit;
+}
+.post-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.post-meta {
+  font-size: 0.8rem;
+  opacity: 0.5;
+  margin-bottom: 6px;
+}
+.post-desc {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  line-height: 1.5;
+}
+.post-tags-home {
+  margin-top: 8px;
+}
+.post-tags-home .tag {
+  display: inline-block;
+  background: var(--accent-dim);
+  color: var(--accent);
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  margin-right: 6px;
 }
 
+/* === Coming Soon === */
+.coming-soon {
+  text-align: center;
+  padding: 60px 20px;
+  opacity: 0.6;
+  font-size: 1.1rem;
+}
+
+/* === Post Entry (文章列表页) === */
 .post-entry {
   border: 1px solid var(--border);
   border-radius: 12px;
   margin-bottom: 12px;
   transition: transform 0.2s ease;
 }
-
 .post-entry:hover {
   transform: translateY(-2px);
 }
-
-.home-info .entry-content {
-  font-size: 1.05rem;
-  opacity: 0.85;
+.post-title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 code {
@@ -43,7 +159,7 @@ code {
 }
 
 footer {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .post-content h2 {
@@ -52,10 +168,8 @@ footer {
   margin-top: 2em;
 }
 
-/* 标签样式 */
 .post-tags a {
   border-radius: 20px;
   padding: 4px 14px;
   font-size: 0.82rem;
-  letter-spacing: 0.02em;
 }
