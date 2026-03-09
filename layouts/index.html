@@ -1,22 +1,30 @@
 {{ define "main" }}
 <div class="hero">
+  <div class="hero-glow"></div>
   <h1 class="hero-title">dayou<span class="dot">.</span>tech</h1>
   <p class="hero-tagline">探索 AI Agent · 前沿科技 · 深度思考</p>
   <p class="hero-sub">每天一篇，AI 辅助创作，人类审核把关</p>
+  <div class="hero-buttons">
+    <a href="/posts/" class="btn-primary">阅读文章 →</a>
+    <a href="/about/" class="btn-ghost">了解更多</a>
+  </div>
 </div>
 
 <div class="sections">
   <div class="section-card">
+    <div class="card-glow card-glow-blue"></div>
     <span class="section-icon">🤖</span>
     <h3>AI Agent</h3>
     <p>智能体架构、工作流设计、实战经验分享</p>
   </div>
   <div class="section-card">
+    <div class="card-glow card-glow-purple"></div>
     <span class="section-icon">⚡</span>
     <h3>自动化</h3>
     <p>用技术消除重复，让创造力聚焦在真正重要的事上</p>
   </div>
   <div class="section-card">
+    <div class="card-glow card-glow-green"></div>
     <span class="section-icon">🔭</span>
     <h3>前沿科技</h3>
     <p>深度思考，独立观点，追踪技术前沿动态</p>
@@ -30,22 +38,35 @@
   {{ range first 5 $posts }}
   <article class="post-card">
     <a href="{{ .Permalink }}">
-      <h3>{{ .Title }}</h3>
-      <p class="post-meta">{{ .Date.Format "2006-01-02" }} · {{ .ReadingTime }} min</p>
-      {{ if .Description }}<p class="post-desc">{{ .Description }}</p>{{ end }}
-      {{ if .Params.tags }}
-      <div class="post-tags-home">
-        {{ range .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}
+      <div class="post-card-inner">
+        <h3>{{ .Title }}</h3>
+        <p class="post-meta">{{ .Date.Format "2006-01-02" }} · {{ .ReadingTime }} min</p>
+        {{ if .Description }}<p class="post-desc">{{ .Description }}</p>{{ end }}
+        {{ if .Params.tags }}
+        <div class="post-tags-home">
+          {{ range .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}
+        </div>
+        {{ end }}
       </div>
-      {{ end }}
+      <span class="post-arrow">→</span>
     </a>
   </article>
   {{ end }}
 </div>
 {{ else }}
 <div class="coming-soon">
-  <p>📝 首篇文章即将发布，敬请期待...</p>
+  <div class="coming-icon">📝</div>
+  <p>首篇文章即将发布</p>
+  <p class="coming-sub">正在酝酿中，敬请期待...</p>
 </div>
 {{ end }}
 
+<div class="cta-section">
+  <h2>保持关注</h2>
+  <p>通过 RSS 订阅获取最新文章推送</p>
+  <div class="cta-buttons">
+    <a href="/index.xml" class="btn-primary">📡 RSS 订阅</a>
+    <a href="https://github.com/luoz8881-tech" class="btn-ghost" target="_blank">GitHub</a>
+  </div>
+</div>
 {{ end }}
