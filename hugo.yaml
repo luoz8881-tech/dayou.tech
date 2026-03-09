@@ -25,7 +25,7 @@ params:
     Title: "大有 · AI 实践者"
     Content: >
       不写代码的普通人，用 AI 搭网站、连服务器、做自动化。
-      从一只「龙虾」（LobeChat）开始，每篇文章都是真实操作记录。
+      从一只「龙虾」（OpenClaw）开始，每篇文章都是真实操作记录。
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
