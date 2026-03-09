@@ -117,8 +117,9 @@ Bybit Taker 手续费是 0.055%/边，往返 0.11%。频繁交易的策略，手
 
 现在每次看到漂亮的回测数字，我的第一反应已经变成：先跑 Monte Carlo，再说别的。
 
-**相关阅读：**
-- [回归预测为什么做不了交易信号](/posts/2026-03-10-regression-vs-classification/)
+**系列文章：**
+- 上一篇 → [回归预测为什么做不了交易信号](/posts/2026-03-10-regression-vs-classification/)
+- 下一篇 → [Bybit API 实盘踩坑全记录](/posts/2026-03-10-bybit-api-pitfalls/)
 - [我为什么放弃手工指标，转向 AI 量化](/posts/2026-03-10-why-i-switched-to-ai-quant/)
 
 ---
