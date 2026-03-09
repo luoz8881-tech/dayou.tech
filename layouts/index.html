@@ -2,39 +2,17 @@
 <div class="hero">
   <div class="hero-glow"></div>
   <h1 class="hero-title">dayou<span class="dot">.</span>tech</h1>
-  <p class="hero-tagline">探索 AI Agent · 前沿科技 · 深度思考</p>
-  <p class="hero-sub">每天一篇，AI 辅助创作，人类审核把关</p>
+  <p class="hero-bio">👋 我是大有，AI 探索者。研究 Agent、实践自动化、记录前沿科技。</p>
   <div class="hero-buttons">
     <a href="/posts/" class="btn-primary">阅读文章 →</a>
-    <a href="/about/" class="btn-ghost">了解更多</a>
-  </div>
-</div>
-
-<div class="sections">
-  <div class="section-card">
-    <div class="card-glow card-glow-blue"></div>
-    <span class="section-icon">🤖</span>
-    <h3>AI Agent</h3>
-    <p>智能体架构、工作流设计、实战经验分享</p>
-  </div>
-  <div class="section-card">
-    <div class="card-glow card-glow-purple"></div>
-    <span class="section-icon">⚡</span>
-    <h3>自动化</h3>
-    <p>用技术消除重复，让创造力聚焦在真正重要的事上</p>
-  </div>
-  <div class="section-card">
-    <div class="card-glow card-glow-green"></div>
-    <span class="section-icon">🔭</span>
-    <h3>前沿科技</h3>
-    <p>深度思考，独立观点，追踪技术前沿动态</p>
+    <a href="/about/" class="btn-ghost">关于我</a>
   </div>
 </div>
 
 {{ $posts := where .Site.RegularPages "Section" "posts" }}
 {{ if $posts }}
 <div class="latest-posts">
-  <h2 class="section-heading">最新文章</h2>
+  <h2 class="section-heading">📝 最新文章</h2>
   {{ range first 5 $posts }}
   <article class="post-card">
     <a href="{{ .Permalink }}">
@@ -53,13 +31,25 @@
   </article>
   {{ end }}
 </div>
-{{ else }}
-<div class="coming-soon">
-  <div class="coming-icon">📝</div>
-  <p>首篇文章即将发布</p>
-  <p class="coming-sub">正在酝酿中，敬请期待...</p>
-</div>
 {{ end }}
+
+<div class="sections">
+  <div class="section-card">
+    <span class="section-icon">🤖</span>
+    <h3>AI Agent</h3>
+    <p>智能体架构、工作流设计、实战经验分享</p>
+  </div>
+  <div class="section-card">
+    <span class="section-icon">⚡</span>
+    <h3>自动化</h3>
+    <p>用技术消除重复，让创造力聚焦在真正重要的事上</p>
+  </div>
+  <div class="section-card">
+    <span class="section-icon">🔭</span>
+    <h3>前沿科技</h3>
+    <p>深度思考，独立观点，追踪技术前沿动态</p>
+  </div>
+</div>
 
 <div class="cta-section">
   <h2>保持关注</h2>

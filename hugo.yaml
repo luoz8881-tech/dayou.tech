@@ -12,6 +12,8 @@ params:
   ShowCodeCopyButtons: true
   ShowToc: true
   description: "AI 探索者的独立写作空间"
+  mainSections:
+    - posts
 
 menu:
   main:
