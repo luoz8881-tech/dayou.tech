@@ -14,14 +14,6 @@ params:
   description: "AI 探索者的独立写作空间"
   mainSections:
     - posts
-  homeInfoParams:
-    Title: "👋 我是大有"
-    Content: "AI 探索者，研究 Agent、实践自动化、记录前沿科技。每天一篇，AI 辅助创作，人类审核把关。"
-  socialIcons:
-    - name: github
-      url: "https://github.com/luoz8881-tech"
-    - name: rss
-      url: "/index.xml"
 
 menu:
   main:

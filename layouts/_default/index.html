@@ -1,0 +1,36 @@
+{{- define "main" }}
+
+<div class="profile" style="text-align:center;padding:2rem 0 1rem">
+  <h1 style="font-size:2.2rem;margin-bottom:0.5rem">🚀 大有 · AI 实践者</h1>
+  <p style="font-size:1.1rem;color:var(--secondary);max-width:600px;margin:0 auto 1rem">
+    不写代码的普通人，用 AI 搭网站、连服务器、做自动化。<br>
+    <strong>每篇文章都是真实操作记录，你也能复制。</strong>
+  </p>
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+    <a href="/posts/" style="background:var(--primary);color:var(--theme);padding:10px 24px;border-radius:8px;font-weight:600;text-decoration:none">📖 读文章</a>
+    <a href="/tools/" style="border:1px solid var(--primary);color:var(--primary);padding:10px 24px;border-radius:8px;font-weight:600;text-decoration:none">🧰 工具箱</a>
+    <a href="/about/" style="border:1px solid var(--primary);color:var(--primary);padding:10px 24px;border-radius:8px;font-weight:600;text-decoration:none">👤 关于我</a>
+  </div>
+</div>
+
+<h2 style="margin-top:2rem">📝 最新文章</h2>
+
+{{- $pages := where site.RegularPages "Section" "posts" }}
+{{- range $pages }}
+<article class="post-entry">
+  <header class="entry-header">
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  </header>
+  <div class="entry-content">
+    <p>{{ .Summary | truncate 120 }}</p>
+  </div>
+  <footer class="entry-footer">
+    <span>{{ .Date.Format "2006-01-02" }}</span>&nbsp;·&nbsp;<span>{{ .ReadingTime }} min</span>
+    {{- range .Params.tags }}
+    <a href="/tags/{{ . | urlize }}/" class="tag" style="margin-left:6px;font-size:0.8rem;padding:2px 8px;border:1px solid var(--secondary);border-radius:4px;text-decoration:none">{{ . }}</a>
+    {{- end }}
+  </footer>
+</article>
+{{- end }}
+
+{{- end }}
