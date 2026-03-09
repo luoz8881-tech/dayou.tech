@@ -77,7 +77,10 @@
   gap: 12px;
   margin-bottom: 3rem;
 }
-@media (max-width: 520px) {
+@media (max-width: 600px) {
+  .identity-cards { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 380px) {
   .identity-cards { grid-template-columns: 1fr; }
 }
 .id-card {
@@ -217,6 +220,11 @@
     <span class="id-card-icon">🦞</span>
     <div class="id-card-title">OpenClaw 深度用户</div>
     <div class="id-card-desc">7×24 小时 AI 管家在跑，每天自动推送日报、管理工作流</div>
+  </div>
+  <div class="id-card">
+    <span class="id-card-icon">🔭</span>
+    <div class="id-card-title">前沿探索者</div>
+    <div class="id-card-desc">对未知保持好奇，关注 AI、哲学与技术如何重塑人类的未来</div>
   </div>
 </div>
 
