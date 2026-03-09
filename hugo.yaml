@@ -3,6 +3,12 @@ languageCode: zh-cn
 title: dayou.tech
 theme: PaperMod
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 params:
   defaultTheme: dark
   ShowReadingTime: true
@@ -11,9 +17,18 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowToc: true
+  comments: true
   description: "AI 探索者的独立写作空间"
   mainSections:
     - posts
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
 
 menu:
   main:
@@ -32,6 +47,10 @@ menu:
     - identifier: tags
       name: 标签
       url: /tags/
+      weight: 25
+    - identifier: search
+      name: 搜索
+      url: /search/
       weight: 30
     - identifier: about
       name: 关于

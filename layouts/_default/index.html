@@ -1,59 +1,57 @@
 {{- define "main" }}
 
-<div style="text-align:center;padding:2rem 0 1.5rem">
-  <h1 style="font-size:2.2rem;margin-bottom:0.5rem">🚀 大有 · AI 实践者</h1>
-  <p style="font-size:1.1rem;color:var(--secondary);max-width:600px;margin:0 auto">
-    不写代码的普通人，用 AI 搭网站、连服务器、做自动化。<br>
-    <strong>每篇文章都是真实操作记录，你也能复制。</strong>
-  </p>
-</div>
+<style>
+.hero{text-align:center;padding:4rem 0 3rem}
+.hero h1{font-size:2.4rem;font-weight:700;letter-spacing:-0.02em;margin:0}
+.hero p{font-size:1.15rem;color:var(--secondary);margin:1rem auto 1.8rem;max-width:420px;line-height:1.7}
+.hero-btn{display:inline-block;background:var(--primary);color:var(--theme);padding:12px 32px;border-radius:24px;font-size:1rem;font-weight:600;text-decoration:none;transition:opacity .2s}
+.hero-btn:hover{opacity:.85}
+.hero-links{margin-top:1rem;font-size:.9rem}
+.hero-links a{color:var(--secondary);text-decoration:none;margin:0 12px;transition:color .2s}
+.hero-links a:hover{color:var(--primary)}
+.divider{width:40px;height:2px;background:var(--secondary);opacity:.3;margin:0 auto 2.5rem;border:none}
+.post-item{margin-bottom:2rem}
+.post-item h3{font-size:1.2rem;font-weight:600;margin:0 0 .3rem}
+.post-item h3 a{text-decoration:none;color:var(--primary)}
+.post-item h3 a:hover{text-decoration:underline}
+.post-item .desc{color:var(--secondary);font-size:.95rem;margin:0;line-height:1.6}
+.post-item .meta{color:var(--secondary);font-size:.8rem;margin-top:.4rem;opacity:.6}
+.tools-row{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin:3rem 0 1rem}
+.tools-row a{color:var(--secondary);text-decoration:none;font-size:.85rem;transition:color .2s}
+.tools-row a:hover{color:var(--primary)}
+.footer-note{text-align:center;color:var(--secondary);font-size:.85rem;opacity:.5;margin:2rem 0 1rem}
+</style>
 
-<!-- 常用工具速查 -->
-<div style="background:var(--code-bg);border-radius:12px;padding:1.2rem 1.5rem;margin-bottom:2rem">
-  <h2 style="margin-top:0;font-size:1.2rem">🧰 常用工具速查</h2>
-  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px">
-    <a href="https://perplexity.ai" target="_blank" rel="noopener" style="display:block;padding:10px;border:1px solid var(--border);border-radius:8px;text-align:center;text-decoration:none;color:var(--primary)">🔍 Perplexity</a>
-    <a href="https://lobehub.com" target="_blank" rel="noopener" style="display:block;padding:10px;border:1px solid var(--border);border-radius:8px;text-align:center;text-decoration:none;color:var(--primary)">💬 Lobechat</a>
-    <a href="https://claude.ai" target="_blank" rel="noopener" style="display:block;padding:10px;border:1px solid var(--border);border-radius:8px;text-align:center;text-decoration:none;color:var(--primary)">🧠 Claude</a>
-    <a href="https://n8n.io" target="_blank" rel="noopener" style="display:block;padding:10px;border:1px solid var(--border);border-radius:8px;text-align:center;text-decoration:none;color:var(--primary)">⚡ n8n</a>
-    <a href="https://gohugo.io" target="_blank" rel="noopener" style="display:block;padding:10px;border:1px solid var(--border);border-radius:8px;text-align:center;text-decoration:none;color:var(--primary)">📝 Hugo</a>
-    <a href="/tools/" style="display:block;padding:10px;border:1px solid var(--border);border-radius:8px;text-align:center;text-decoration:none;color:var(--secondary)">查看全部 →</a>
+<div class="hero">
+  <h1>大有 · AI 实践者</h1>
+  <p>不写代码的普通人，用 AI 搭网站、连服务器、做自动化。每篇文章都是真实操作记录。</p>
+  <a href="/posts/" class="hero-btn">读文章 →</a>
+  <div class="hero-links">
+    <a href="/tools/">工具箱</a>
+    <a href="/about/">关于我</a>
   </div>
 </div>
 
-<!-- 全部文章直接展开 -->
-<h2>📝 全部文章</h2>
+<hr class="divider">
 
-{{- $pages := where site.RegularPages "Section" "posts" }}
-{{- range $pages }}
-<article style="background:var(--code-bg);border-radius:12px;padding:1.2rem 1.5rem;margin-bottom:1rem">
-  <h3 style="margin-top:0"><a href="{{ .RelPermalink }}" style="text-decoration:none;color:var(--primary)">{{ .Title }}</a></h3>
+{{- $pages := (where site.RegularPages "Section" "posts") }}
+{{- range first 3 $pages }}
+<div class="post-item">
+  <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
   {{- with .Params.description }}
-  <p style="color:var(--secondary);margin:0.3rem 0 0.5rem;font-size:0.95rem">{{ . }}</p>
+  <p class="desc">{{ . }}</p>
   {{- end }}
-  {{- with .Content }}
-  {{- $headings := findRE `<h2[^>]*>(.*?)</h2>` . }}
-  {{- if $headings }}
-  <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0.5rem">
-    {{- range first 4 $headings }}
-    <span style="font-size:0.8rem;padding:2px 8px;border:1px solid var(--border);border-radius:4px;color:var(--secondary)">{{ . | plainify }}</span>
-    {{- end }}
-  </div>
-  {{- end }}
-  {{- end }}
-  <div style="display:flex;align-items:center;gap:12px;font-size:0.85rem;color:var(--secondary)">
-    <span>{{ .Date.Format "2006-01-02" }}</span>
-    <span>{{ .ReadingTime }} min</span>
-    {{- range .Params.tags }}
-    <a href="/tags/{{ . | urlize }}/" style="color:var(--secondary);text-decoration:none">#{{ . }}</a>
-    {{- end }}
-  </div>
-</article>
+  <div class="meta">{{ .Date.Format "2006-01-02" }}</div>
+</div>
 {{- end }}
 
-<!-- 关于我简介 -->
-<div style="background:var(--code-bg);border-radius:12px;padding:1.2rem 1.5rem;margin-top:2rem;text-align:center">
-  <p style="margin:0;color:var(--secondary)">👋 我是大有，AI 探索者，独立写作者，终身学习者。<a href="/about/" style="color:var(--primary)">了解更多 →</a></p>
+<div class="tools-row">
+  <a href="https://perplexity.ai" target="_blank">Perplexity</a>
+  <a href="https://lobehub.com" target="_blank">Lobechat</a>
+  <a href="https://claude.ai" target="_blank">Claude</a>
+  <a href="https://n8n.io" target="_blank">n8n</a>
 </div>
+
+<p class="footer-note">用 AI 探索，用文字记录</p>
 
 {{- end }}
