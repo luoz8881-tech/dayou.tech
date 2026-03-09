@@ -33,25 +33,21 @@ params:
 menu:
   main:
     - identifier: posts
-      name: 全部
+      name: 文章
       url: /posts/
       weight: 10
-    - identifier: quant
-      name: 量化实战
-      url: /categories/量化实战/
-      weight: 20
-    - identifier: tools-cat
-      name: AI工具
-      url: /categories/ai工具/
-      weight: 30
     - identifier: tools
       name: 工具箱
       url: /tools/
-      weight: 40
+      weight: 20
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 30
     - identifier: about
       name: 关于
       url: /about/
-      weight: 50
+      weight: 40
 
 taxonomies:
   tag: tags
