@@ -1,31 +1,155 @@
 {{- define "main" }}
 
 <style>
-.hero{text-align:center;padding:4rem 0 3rem}
-.hero h1{font-size:2.4rem;font-weight:700;letter-spacing:-0.02em;margin:0}
-.hero p{font-size:1.15rem;color:var(--secondary);margin:1rem auto 1.8rem;max-width:420px;line-height:1.7}
-.hero-btn{display:inline-block;background:var(--primary);color:var(--theme);padding:12px 32px;border-radius:24px;font-size:1rem;font-weight:600;text-decoration:none;transition:opacity .2s}
-.hero-btn:hover{opacity:.85}
-.hero-links{margin-top:1rem;font-size:.9rem}
-.hero-links a{color:var(--secondary);text-decoration:none;margin:0 12px;transition:color .2s}
-.hero-links a:hover{color:var(--primary)}
-.divider{width:40px;height:2px;background:var(--secondary);opacity:.3;margin:0 auto 2.5rem;border:none}
-.post-item{margin-bottom:2rem}
-.post-item h3{font-size:1.2rem;font-weight:600;margin:0 0 .3rem}
-.post-item h3 a{text-decoration:none;color:var(--primary)}
-.post-item h3 a:hover{text-decoration:underline}
-.post-item .desc{color:var(--secondary);font-size:.95rem;margin:0;line-height:1.6}
-.post-item .meta{color:var(--secondary);font-size:.8rem;margin-top:.4rem;opacity:.6}
-.tools-row{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin:3rem 0 1rem}
-.tools-row a{color:var(--secondary);text-decoration:none;font-size:.85rem;transition:color .2s}
-.tools-row a:hover{color:var(--primary)}
-.footer-note{text-align:center;color:var(--secondary);font-size:.85rem;opacity:.5;margin:2rem 0 1rem}
+.hero {
+  text-align: center;
+  padding: 5rem 0 3.5rem;
+}
+.hero h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin: 0 0 1rem;
+}
+.hero p {
+  font-size: 1.05rem;
+  color: var(--secondary);
+  margin: 0 auto 2rem;
+  max-width: 400px;
+  line-height: 1.75;
+}
+.hero-btn {
+  display: inline-block;
+  background: var(--primary);
+  color: var(--theme);
+  padding: 11px 30px;
+  border-radius: 100px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.hero-btn:hover { opacity: 0.8; }
+.hero-links {
+  margin-top: 1.2rem;
+  font-size: 0.88rem;
+}
+.hero-links a {
+  color: var(--secondary);
+  text-decoration: none;
+  margin: 0 14px;
+  transition: color 0.2s;
+}
+.hero-links a:hover { color: var(--primary); }
+
+.divider {
+  width: 32px;
+  height: 1px;
+  background: var(--secondary);
+  opacity: 0.2;
+  margin: 0 auto 3rem;
+  border: none;
+}
+
+.section-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  opacity: 0.5;
+  margin-bottom: 1.5rem;
+}
+
+.post-item {
+  margin-bottom: 2.2rem;
+}
+.post-item h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.3rem;
+  letter-spacing: -0.01em;
+}
+.post-item h3 a {
+  text-decoration: none;
+  color: var(--primary);
+}
+.post-item h3 a:hover { text-decoration: underline; }
+.post-item .desc {
+  color: var(--secondary);
+  font-size: 0.92rem;
+  margin: 0;
+  line-height: 1.65;
+}
+.post-item .meta {
+  color: var(--secondary);
+  font-size: 0.78rem;
+  margin-top: 0.35rem;
+  opacity: 0.5;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+.view-all {
+  font-size: 0.88rem;
+  color: var(--secondary);
+  text-decoration: none;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+.view-all:hover { opacity: 1; }
+
+.tools-section {
+  margin: 3.5rem 0 1rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(128,128,128,0.12);
+}
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 1.2rem;
+}
+@media (max-width: 480px) {
+  .tools-grid { grid-template-columns: 1fr; }
+}
+.tool-item {
+  padding: 16px 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(128,128,128,0.12);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s, transform 0.2s;
+  display: block;
+}
+.tool-item:hover {
+  border-color: rgba(128,128,128,0.3);
+  transform: translateY(-1px);
+}
+.tool-name {
+  font-size: 0.92rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.tool-desc {
+  font-size: 0.8rem;
+  color: var(--secondary);
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+.footer-note {
+  text-align: center;
+  color: var(--secondary);
+  font-size: 0.82rem;
+  opacity: 0.4;
+  margin: 2.5rem 0 1rem;
+}
 </style>
 
 <div class="hero">
   <h1>大有 · AI 实践者</h1>
   <p>不写代码的普通人，用 AI 搭网站、连服务器、做自动化。每篇文章都是真实操作记录。</p>
-  <a href="/posts/" class="hero-btn">读文章 →</a>
+  <a href="/posts/" class="hero-btn">开始阅读 →</a>
   <div class="hero-links">
     <a href="/tools/">工具箱</a>
     <a href="/about/">关于我</a>
@@ -34,8 +158,10 @@
 
 <hr class="divider">
 
+<p class="section-label">最新文章</p>
+
 {{- $pages := (where site.RegularPages "Section" "posts") }}
-{{- range first 3 $pages }}
+{{- range first 5 $pages }}
 <div class="post-item">
   <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
   {{- with .Params.description }}
@@ -45,13 +171,30 @@
 </div>
 {{- end }}
 
-<div class="tools-row">
-  <a href="https://perplexity.ai" target="_blank">Perplexity</a>
-  <a href="https://lobehub.com" target="_blank">Lobechat</a>
-  <a href="https://claude.ai" target="_blank">Claude</a>
-  <a href="https://n8n.io" target="_blank">n8n</a>
+<a href="/posts/" class="view-all">查看全部文章 →</a>
+
+<div class="tools-section">
+  <p class="section-label">我在用的工具</p>
+  <div class="tools-grid">
+    <a href="https://openclaw.ai" target="_blank" rel="noopener" class="tool-item">
+      <div class="tool-name">🦞 OpenClaw</div>
+      <div class="tool-desc">我的 AI 管家，7×24 小时运行，自动搜集信息、推送日报</div>
+    </a>
+    <a href="https://perplexity.ai" target="_blank" rel="noopener" class="tool-item">
+      <div class="tool-name">🔍 Perplexity</div>
+      <div class="tool-desc">带引用的 AI 搜索，研究任何话题的第一步</div>
+    </a>
+    <a href="https://claude.ai" target="_blank" rel="noopener" class="tool-item">
+      <div class="tool-name">✦ Claude</div>
+      <div class="tool-desc">写作、分析、代码，长文处理能力最强的 AI 助手</div>
+    </a>
+    <a href="https://n8n.io" target="_blank" rel="noopener" class="tool-item">
+      <div class="tool-name">⚡ n8n</div>
+      <div class="tool-desc">开源自动化平台，把重复的事情交给工作流</div>
+    </a>
+  </div>
 </div>
 
-<p class="footer-note">用 AI 探索，用文字记录</p>
+<p class="footer-note">用 AI 探索，用文字记录 · dayou.tech</p>
 
 {{- end }}

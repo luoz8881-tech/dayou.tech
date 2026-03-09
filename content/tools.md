@@ -2,40 +2,53 @@
 title: "工具箱"
 layout: "single"
 url: "/tools/"
-summary: "我在用的 AI 和效率工具推荐"
+summary: "我在用的 AI 和效率工具"
 ShowReadingTime: false
 ShowShareButtons: false
 ---
 
+这里收录的，都是我真实在用的工具。每一个都有具体的使用场景，不是凑数的推荐列表。
+
+---
+
+## AI 智能体
+
+**[OpenClaw](https://openclaw.ai)**
+我的核心工具。部署在云服务器上，7×24 小时运行。每天自动搜集时政、加密、科技资讯，生成日报推送到手机。这个博客本身，也是用它辅助创作和发布的。→ [我是怎么用 OpenClaw 的](/posts/)
+
+---
+
 ## AI 助手
 
-| 工具 | 说明 | 链接 |
-|------|------|------|
-| Perplexity | AI 搜索引擎，研究利器 | [perplexity.ai](https://perplexity.ai) |
-| Lobechat | 开源 AI 聊天，支持插件 | [lobehub.com](https://lobehub.com) |
-| Claude | Anthropic AI，擅长分析 | [claude.ai](https://claude.ai) |
-| ChatGPT | OpenAI AI，生态最丰富 | [chat.openai.com](https://chat.openai.com) |
+**[Perplexity](https://perplexity.ai)**
+研究任何话题的第一步。带引用来源，不瞎编，适合快速了解一个新领域。
+
+**[Claude](https://claude.ai)**
+长文写作、深度分析的首选。处理复杂问题时比其他模型更稳定，上下文窗口大。
+
+**[ChatGPT](https://chat.openai.com)**
+生态最丰富，插件多。日常对话和快速问答用这个。
+
+---
 
 ## 自动化
 
-| 工具 | 说明 | 链接 |
-|------|------|------|
-| n8n | 开源自动化平台 | [n8n.io](https://n8n.io) |
-| GitHub Actions | CI/CD 自动化 | [github.com](https://github.com/features/actions) |
-| Make | 可视化自动化 | [make.com](https://make.com) |
+**[n8n](https://n8n.io)**
+开源自动化平台，可以自托管。把重复的工作流程串联起来，减少手动操作。
+
+**[GitHub Actions](https://github.com/features/actions)**
+这个博客的自动部署就靠它。每次提交代码，自动构建发布。
+
+---
 
 ## 建站
 
-| 工具 | 说明 | 链接 |
-|------|------|------|
-| Hugo | 静态网站生成器 | [gohugo.io](https://gohugo.io) |
-| PaperMod | Hugo 主题 | [GitHub](https://github.com/adityatelange/hugo-PaperMod) |
-| GitHub Pages | 免费托管 | [pages.github.com](https://pages.github.com) |
+**[Hugo](https://gohugo.io)**
+静态网站生成器，速度极快。这个博客用的就是 Hugo + PaperMod 主题。
 
-## AI Agent 框架
+**[Cloudflare](https://cloudflare.com)**
+域名、CDN、DNS 一站管理。免费套餐够用，国内访问速度也不错。
 
-| 工具 | 说明 | 链接 |
-|------|------|------|
-| CrewAI | 多 Agent 协作 | [crewai.com](https://crewai.com) |
-| LangChain | LLM 开发框架 | [langchain.com](https://langchain.com) |
-| AutoGen | 微软 Agent 框架 | [GitHub](https://github.com/microsoft/autogen) |
+---
+
+*工具在更新，列表会持续维护。*

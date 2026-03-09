@@ -21,11 +21,6 @@ params:
   comments: true
   mainSections:
     - posts
-  homeInfoParams:
-    Title: "大有 · AI 实践者"
-    Content: >
-      不写代码的普通人，用 AI 搭网站、连服务器、做自动化。
-      从一只「龙虾」（OpenClaw）开始，每篇文章都是真实操作记录。
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -41,18 +36,10 @@ menu:
       name: 文章
       url: /posts/
       weight: 10
-    - identifier: categories
-      name: 分类
-      url: /categories/
-      weight: 15
     - identifier: tools
       name: 工具箱
       url: /tools/
       weight: 20
-    - identifier: tags
-      name: 标签
-      url: /tags/
-      weight: 25
     - identifier: search
       name: 搜索
       url: /search/
