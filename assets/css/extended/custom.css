@@ -1,0 +1,61 @@
+:root {
+  --font-mono: 'SF Mono', 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', sans-serif;
+  letter-spacing: 0.01em;
+  line-height: 1.8;
+}
+
+.post-title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.first-entry {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.post-entry {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin-bottom: 12px;
+  transition: transform 0.2s ease;
+}
+
+.post-entry:hover {
+  transform: translateY(-2px);
+}
+
+.home-info .entry-content {
+  font-size: 1.05rem;
+  opacity: 0.85;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+footer {
+  opacity: 0.6;
+}
+
+.post-content h2 {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.3em;
+  margin-top: 2em;
+}
+
+/* 标签样式 */
+.post-tags a {
+  border-radius: 20px;
+  padding: 4px 14px;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+}
