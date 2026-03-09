@@ -1,6 +1,8 @@
 ---
 title: 关于
 layout: single
+hidemeta: true
+ShowToc: false
 ---
 
 ## 我是大有
@@ -26,7 +28,7 @@ layout: single
 ## 原则
 
 - 写自己经历过的，不搬运
-- AI 辅助创作，人工审核把关  
+- AI 辅助创作，人工审核把关
 - 判断基于事实，不带立场
 
 ---
