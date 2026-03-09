@@ -21,6 +21,10 @@ menu:
       name: 文章
       url: /posts/
       weight: 10
+    - identifier: categories
+      name: 分类
+      url: /categories/
+      weight: 15
     - identifier: tools
       name: 工具箱
       url: /tools/
