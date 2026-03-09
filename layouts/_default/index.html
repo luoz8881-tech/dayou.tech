@@ -3,20 +3,29 @@
 <style>
 .hero {
   text-align: center;
-  padding: 5rem 0 3.5rem;
+  padding: 5rem 0 3rem;
 }
 .hero h1 {
   font-size: 2.2rem;
   font-weight: 700;
   letter-spacing: -0.03em;
-  margin: 0 0 1rem;
+  margin: 0 0 0.8rem;
+}
+.hero-sub {
+  font-size: 0.82rem;
+  color: var(--secondary);
+  opacity: 0.5;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  font-family: 'SF Mono', 'Fira Code', monospace;
 }
 .hero p {
   font-size: 1.05rem;
   color: var(--secondary);
   margin: 0 auto 2rem;
-  max-width: 400px;
-  line-height: 1.75;
+  max-width: 460px;
+  line-height: 1.8;
 }
 .hero-btn {
   display: inline-block;
@@ -59,6 +68,39 @@
   color: var(--secondary);
   opacity: 0.5;
   margin-bottom: 1.5rem;
+}
+
+/* 身份卡片 */
+.identity-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 3rem;
+}
+@media (max-width: 520px) {
+  .identity-cards { grid-template-columns: 1fr; }
+}
+.id-card {
+  border: 1px solid rgba(128,128,128,0.12);
+  border-radius: 12px;
+  padding: 18px 16px;
+  text-align: left;
+}
+.id-card-icon {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  display: block;
+}
+.id-card-title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.id-card-desc {
+  font-size: 0.78rem;
+  color: var(--secondary);
+  opacity: 0.65;
+  line-height: 1.55;
 }
 
 .post-item {
@@ -147,9 +189,10 @@
 </style>
 
 <div class="hero">
-  <h1>大有 · AI 实践者</h1>
-  <p>不写代码的普通人，用 AI 搭网站、连服务器、做自动化。每篇文章都是真实操作记录。</p>
-  <a href="/posts/" class="hero-btn">开始阅读 →</a>
+  <p class="hero-sub">真实记录 · 持续进化</p>
+  <h1>大有 · 在用 AI 重新定义自己</h1>
+  <p>上班、量化交易、用 AI 做副业——三件事同时在跑。<br>这里记录真实发生的事：做成了什么，踩了什么坑，下一步怎么想。</p>
+  <a href="/posts/" class="hero-btn">读文章 →</a>
   <div class="hero-links">
     <a href="/tools/">工具箱</a>
     <a href="/about/">关于我</a>
@@ -157,6 +200,25 @@
 </div>
 
 <hr class="divider">
+
+<p class="section-label">我是谁</p>
+<div class="identity-cards">
+  <div class="id-card">
+    <span class="id-card-icon">🏛️</span>
+    <div class="id-card-title">体制内上班族</div>
+    <div class="id-card-desc">正职在政府机关，业余时间探索 AI 的边界</div>
+  </div>
+  <div class="id-card">
+    <span class="id-card-icon">📈</span>
+    <div class="id-card-title">量化交易实践者</div>
+    <div class="id-card-desc">用 AI 部署加密货币量化系统，正在跑，有数据有亏损</div>
+  </div>
+  <div class="id-card">
+    <span class="id-card-icon">🦞</span>
+    <div class="id-card-title">OpenClaw 深度用户</div>
+    <div class="id-card-desc">7×24 小时 AI 管家在跑，每天自动推送日报、管理工作流</div>
+  </div>
+</div>
 
 <p class="section-label">最新文章</p>
 
@@ -195,6 +257,6 @@
   </div>
 </div>
 
-<p class="footer-note">用 AI 探索，用文字记录 · dayou.tech</p>
+<p class="footer-note">技术 · 温度 · 思考 · dayou.tech</p>
 
 {{- end }}
