@@ -3,7 +3,7 @@ title: "Less Humanity. More Algorithm."
 date: 2026-03-09T20:00:00+08:00
 description: "Five years of crypto losses. One decision to change everything."
 tags: [crypto, quant trading, AI, personal story, Bybit]
-categories: [Quant Trading]
+categories: [Thinking]
 draft: false
 ---
 
