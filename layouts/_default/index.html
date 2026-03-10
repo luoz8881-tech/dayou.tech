@@ -2,129 +2,191 @@
 
 <style>
 .hero {
+  padding: 5rem 0 4rem;
   text-align: center;
-  padding: 4rem 0 2.5rem;
 }
+
 .hero h1 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 700;
-  letter-spacing: -0.03em;
-  margin: 0 0 1rem;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+  margin: 0 0 1.2rem;
+  color: #e8e8e8;
 }
+
 .hero p {
   font-size: 1rem;
-  color: var(--secondary);
-  margin: 0 auto 2rem;
-  max-width: 440px;
-  line-height: 1.85;
+  color: #666;
+  margin: 0 auto 2.2rem;
+  max-width: 400px;
+  line-height: 1.8;
 }
+
 .hero-btn {
   display: inline-block;
-  background: transparent;
-  color: var(--primary);
+  color: #e8e8e8;
   padding: 10px 28px;
   border-radius: 100px;
-  border: 1px solid rgba(128,128,128,0.35);
-  font-size: 0.92rem;
+  border: 1px solid rgba(255,255,255,0.15);
+  font-size: 0.9rem;
   font-weight: 500;
   text-decoration: none;
   transition: border-color 0.2s;
+  font-family: 'Inter', sans-serif;
 }
-.hero-btn:hover { border-color: rgba(128,128,128,0.7); }
+
+.hero-btn:hover {
+  border-color: rgba(255,255,255,0.4);
+  color: #e8e8e8 !important;
+}
+
 .hero-links {
   margin-top: 1.2rem;
-  font-size: 0.88rem;
+  font-size: 0.85rem;
 }
+
 .hero-links a {
-  color: var(--secondary);
+  color: #666;
   text-decoration: none;
-  margin: 0 14px;
-  opacity: 0.7;
-  transition: opacity 0.2s;
+  margin: 0 12px;
+  transition: color 0.2s;
 }
-.hero-links a:hover { opacity: 1; }
+
+.hero-links a:hover { color: #e8e8e8; }
 
 .divider {
-  width: 32px;
+  width: 24px;
   height: 1px;
-  background: var(--secondary);
-  opacity: 0.15;
-  margin: 0 auto 3rem;
+  background: rgba(255,255,255,0.08);
+  margin: 0 auto 3.5rem;
   border: none;
 }
 
 .section-label {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--secondary);
-  opacity: 0.45;
-  margin-bottom: 1.4rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+  font-family: 'JetBrains Mono', monospace;
 }
 
-.identity-cards {
+/* Identity cards */
+.id-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin-bottom: 3.5rem;
+  gap: 12px;
+  margin-bottom: 4rem;
 }
-@media (max-width: 600px) {
-  .identity-cards { grid-template-columns: 1fr; }
-}
-.id-card {
-  border: 1px solid rgba(128,128,128,0.1);
-  border-radius: 10px;
-  padding: 16px 14px;
-}
-.id-card-icon { font-size: 1.3rem; display: block; margin-bottom: 6px; }
-.id-card-title { font-size: 0.85rem; font-weight: 600; margin-bottom: 4px; }
-.id-card-desc { font-size: 0.76rem; color: var(--secondary); opacity: 0.65; line-height: 1.5; }
 
-.post-item {
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(128,128,128,0.08);
+@media (max-width: 580px) {
+  .id-cards { grid-template-columns: 1fr; }
 }
-.post-item:last-of-type { border-bottom: none; }
-.post-cat {
-  font-size: 0.7rem;
+
+.id-card {
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 10px;
+  padding: 18px 16px;
+  transition: border-color 0.2s;
+}
+
+.id-card:hover {
+  border-color: rgba(255,255,255,0.12);
+}
+
+.id-icon {
+  font-size: 1.3rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.id-title {
+  font-size: 0.82rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  opacity: 0.4;
-  margin-bottom: 6px;
-  font-family: 'SF Mono', monospace;
+  color: #e8e8e8;
+  margin-bottom: 5px;
+  letter-spacing: -0.01em;
 }
-.post-item h3 { font-size: 1.05rem; font-weight: 600; margin: 0 0 0.3rem; }
-.post-item h3 a { text-decoration: none; color: var(--primary); }
-.post-item h3 a:hover { text-decoration: underline; }
-.post-item .desc { color: var(--secondary); font-size: 0.9rem; margin: 0; line-height: 1.65; opacity: 0.8; }
-.post-item .meta { color: var(--secondary); font-size: 0.75rem; margin-top: 0.4rem; opacity: 0.4; font-family: 'SF Mono', monospace; }
+
+.id-desc {
+  font-size: 0.75rem;
+  color: #555;
+  line-height: 1.55;
+}
+
+/* Post list */
+.post-item {
+  padding: 1.8rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.post-item:last-of-type {
+  border-bottom: none;
+}
+
+.post-cat {
+  font-size: 0.67rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f5a623;
+  margin-bottom: 6px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.post-title-link {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #e8e8e8;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+  line-height: 1.4;
+  display: block;
+  margin-bottom: 0.35rem;
+  transition: color 0.2s;
+}
+
+.post-title-link:hover { color: #f5a623; }
+
+.post-desc {
+  font-size: 0.88rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.post-date {
+  font-size: 0.72rem;
+  color: #444;
+  margin-top: 0.5rem;
+  font-family: 'JetBrains Mono', monospace;
+}
 
 .view-all {
   display: inline-block;
-  margin-top: 0.5rem;
-  font-size: 0.88rem;
-  color: var(--secondary);
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #555;
   text-decoration: none;
-  opacity: 0.55;
-  transition: opacity 0.2s;
+  transition: color 0.2s;
 }
-.view-all:hover { opacity: 1; }
 
-.footer-note {
+.view-all:hover { color: #e8e8e8; }
+
+.site-footer-note {
   text-align: center;
-  color: var(--secondary);
-  font-size: 0.8rem;
-  opacity: 0.3;
-  margin: 2.5rem 0 1rem;
+  color: #333;
+  font-size: 0.75rem;
+  margin: 3rem 0 1rem;
+  font-family: 'JetBrains Mono', monospace;
 }
 </style>
 
 <div class="hero">
   <h1>dayou.tech</h1>
-  <p>I lost years trading crypto with emotion.<br>Now I let AI do it — and document everything.</p>
+  <p>Five years of losses taught me what no book could.<br>Now I use AI to trade — and document everything.</p>
   <a href="/posts/" class="hero-btn">Read Posts →</a>
   <div class="hero-links">
     <a href="/tools/">Tools</a>
@@ -135,21 +197,21 @@
 <hr class="divider">
 
 <p class="section-label">Who I Am</p>
-<div class="identity-cards">
+<div class="id-cards">
   <div class="id-card">
-    <span class="id-card-icon">🤖</span>
-    <div class="id-card-title">AI Quant Builder</div>
-    <div class="id-card-desc">Building real crypto trading systems with AI — live, with real money</div>
+    <span class="id-icon">🤖</span>
+    <div class="id-title">AI Quant Builder</div>
+    <div class="id-desc">Building real crypto trading systems with AI — live, with real money</div>
   </div>
   <div class="id-card">
-    <span class="id-card-icon">📉</span>
-    <div class="id-card-title">Loss & Learn</div>
-    <div class="id-card-desc">Years of losses taught me what no book could — now I document it all</div>
+    <span class="id-icon">📉</span>
+    <div class="id-title">Loss & Learn</div>
+    <div class="id-desc">Years of losses taught me what no book could — now I document it all</div>
   </div>
   <div class="id-card">
-    <span class="id-card-icon">🔭</span>
-    <div class="id-card-title">Independent Explorer</div>
-    <div class="id-card-desc">No institution, no fund — just curiosity, code and conviction</div>
+    <span class="id-icon">🔭</span>
+    <div class="id-title">Independent Explorer</div>
+    <div class="id-desc">No institution, no fund — just curiosity, code and conviction</div>
   </div>
 </div>
 
@@ -161,16 +223,16 @@
   {{- with .Params.categories }}
   <div class="post-cat">{{ index . 0 }}</div>
   {{- end }}
-  <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+  <a href="{{ .RelPermalink }}" class="post-title-link">{{ .Title }}</a>
   {{- with .Params.description }}
-  <p class="desc">{{ . }}</p>
+  <p class="post-desc">{{ . }}</p>
   {{- end }}
-  <div class="meta">{{ .Date.Format "Jan 2, 2006" }}</div>
+  <div class="post-date">{{ .Date.Format "Jan 2, 2006" }}</div>
 </div>
 {{- end }}
 
 <a href="/posts/" class="view-all">All posts →</a>
 
-<p class="footer-note">Quant Trading · AI Tools · Thinking · dayou.tech</p>
+<p class="site-footer-note">dayou.tech · Quant Trading · AI Tools · Thinking</p>
 
 {{- end }}
