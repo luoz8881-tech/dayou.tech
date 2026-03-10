@@ -184,6 +184,14 @@ Next: deploying a quant trading system on it.
 
 ---
 
-*All content is for informational purposes only. Cryptocurrency trading involves significant risk. Trade responsibly.*
+---
+
+**Next step after connecting your server:**
+
+Set up your trading account on [**Bybit**](https://partner.bybit.com/b/156103) — the exchange I use for algo trading. New users get up to **$30,000 USDT** in rewards.
+
+---
+
+*All content is for informational purposes only and does not constitute financial or investment advice. Cryptocurrency trading involves significant risk of loss. Past performance is not indicative of future results. Trade responsibly and never risk more than you can afford to lose.*
 
 *Questions: hi@dayou.tech*

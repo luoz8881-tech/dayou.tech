@@ -95,6 +95,14 @@ No guarantees. Just honesty.
 
 ---
 
-*All content is for informational purposes only. Cryptocurrency trading involves significant risk. Trade responsibly.*
+---
+
+**Ready to start trading smarter?**
+
+The exchange I use and trust: [**Bybit**](https://partner.bybit.com/b/156103) — deep liquidity, never goes down in volatile markets. New users get up to **$30,000 USDT** in rewards.
+
+---
+
+*All content is for informational purposes only and does not constitute financial or investment advice. Cryptocurrency trading involves significant risk of loss. Past performance is not indicative of future results. Trade responsibly and never risk more than you can afford to lose.*
 
 *Questions: hi@dayou.tech*
