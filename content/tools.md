@@ -51,4 +51,23 @@ ShowShareButtons: false
 
 ---
 
+## 云服务器
+
+**[阿里云 ECS 云服务器](https://www.aliyun.com/daily-act/ecs/activity_selection?userCode=132pbq5s)**
+我的量化交易系统和 AI 管家都跑在云服务器上。阿里云国内访问稳定，新用户有大额优惠。
+
+**[阿里云特惠活动](https://www.aliyun.com/minisite/goods?userCode=132pbq5s)**
+云产品限时折扣，新用户首购价格很低。
+
+**[阿里云 AI Agent 专区](https://dashi.aliyun.com/activity/aiagent?userCode=132pbq5s)**
+AI 相关云产品和算力资源，部署 AI 应用的起点。
+
+**[阿里云 AIGC 专区](https://dashi.aliyun.com/activity/aigc?userCode=132pbq5s)**
+大模型调用、图像生成等 AIGC 相关服务。
+
+**[阿里云域名注册](https://wanwang.aliyun.com/website/index?userCode=132pbq5s)**
+博客域名可以在这里注册，价格透明，续费稳定。
+
+---
+
 *工具在更新，列表会持续维护。*
