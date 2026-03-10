@@ -1,13 +1,8 @@
 ---
-title: "联系"
+title: "Contact"
 layout: "single"
-url: "/contact/"
 ShowReadingTime: false
-ShowShareButtons: false
+ShowToc: false
 ---
 
-有想法、建议或合作意向，欢迎联系。
-
-**邮件：** hi@dayou.tech
-
-也可以在文章下方直接留言。
+Email: hi@dayou.tech
