@@ -7,34 +7,22 @@ ShowBreadCrumbs: false
 ShowToc: false
 ---
 
-## Who is dayou
+## Who is DaYou
 
-I spent years trading crypto the wrong way — driven by emotion, greed, and fear.
+Lost years trading crypto on emotion. In 2026, I stopped and built an AI system to trade instead.
 
-In early 2026, I stopped trying to control my instincts and started building systems that don't have any. I deployed an AI-powered quantitative trading system on a cloud server, and it's been running live ever since.
-
-This blog is the honest record of that journey.
+This blog is the real-time record of that journey — the system, the trades, the lessons.
 
 ---
 
-## What this blog is about
+## What's here
 
-Not theory. Not "top 10 crypto tips."
-
-Real systems, real trades, real losses — and what I'm learning from all of it.
-
-Three directions:
-
-- **Quant Trading** — How I build, test and run AI trading systems on crypto markets
-- **AI Tools** — The tools that make this possible: agents, automation, workflows
-- **Thinking** — Observations on markets, technology and the human side of trading
+- **Quant Trading** — Building and running AI trading systems, live
+- **AI Tools** — The tools that make this possible
+- **Thinking** — Markets, technology, the human side of it all
 
 ---
 
-## Disclaimer
-
-*All content is for informational purposes only and does not constitute financial or investment advice. Cryptocurrency trading involves significant risk of loss. Trade responsibly.*
-
----
+*All content is for informational purposes only. Cryptocurrency trading involves significant risk. Trade responsibly.*
 
 Contact: **hi@dayou.tech**
