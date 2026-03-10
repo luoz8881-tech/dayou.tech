@@ -9,17 +9,17 @@ ShowToc: false
 
 ## Who is DaYou
 
-Lost years trading crypto on emotion. In 2026, I stopped and built an AI system to trade instead.
+Traded with humanity for years. Lost. Built a system instead.
 
-This blog is the real-time record of that journey — the system, the trades, the lessons.
+This is the record.
 
 ---
 
 ## What's here
 
-- **Quant Trading** — Building and running AI trading systems, live
-- **AI Tools** — The tools that make this possible
-- **Thinking** — Markets, technology, the human side of it all
+- **Quant Trading** — Building and running AI systems against the market
+- **AI Tools** — The tools that make it possible
+- **Thinking** — Markets, technology, and what it means to be human
 
 ---
 
