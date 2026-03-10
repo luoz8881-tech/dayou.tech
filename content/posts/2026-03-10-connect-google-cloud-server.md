@@ -75,19 +75,19 @@ An SSH key is a matched pair — public key goes to the server, private key stay
 
 **Mac / Linux** — open Terminal:
 ```bash
-ssh-keygen -t rsa -b 4096 -f ~/.ssh/gcp_key -C "yourusername"
+ssh-keygen -t rsa -b 4096 -f ~/.ssh/gcp_key -C "dayou"
 ```
 
 **Windows** — open PowerShell:
 ```powershell
-ssh-keygen -t rsa -b 4096 -f $HOME\.ssh\gcp_key -C "yourusername"
+ssh-keygen -t rsa -b 4096 -f $HOME\.ssh\gcp_key -C "dayou"
 ```
+
+Copy and run as-is. The username `dayou` at the end is what Google Cloud uses to create your server account — you can change it to anything you like, just remember what you used.
 
 This creates two files:
 - `gcp_key` — your private key. Never share this.
 - `gcp_key.pub` — your public key. This goes to Google Cloud.
-
-**Important:** The username after `-C` is what Google Cloud uses to create your server account. Remember it.
 
 ---
 
@@ -123,13 +123,15 @@ Paste it in. Save.
 
 **Mac / Linux:**
 ```bash
-ssh -i ~/.ssh/gcp_key yourusername@your-server-ip
+ssh -i ~/.ssh/gcp_key dayou@12.34.56.78
 ```
 
 **Windows:**
 ```powershell
-ssh -i $HOME\.ssh\gcp_key yourusername@your-server-ip
+ssh -i $HOME\.ssh\gcp_key dayou@12.34.56.78
 ```
+
+Replace `dayou` with your username and `12.34.56.78` with your server's external IP. Everything else stays the same.
 
 First connection will ask:
 ```
