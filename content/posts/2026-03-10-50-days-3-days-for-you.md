@@ -125,12 +125,6 @@ Just follow along.
 
 ---
 
-**The exchange I run my system on: [Bybit](https://partner.bybit.com/b/156103)**
-
-New users get up to **$30,000 USDT** in rewards + 30% trading fee discount.
-
----
-
 *All content is for informational purposes only and does not constitute financial or investment advice. Cryptocurrency trading involves significant risk of loss. Past performance is not indicative of future results. Trade responsibly and never risk more than you can afford to lose.*
 
 *Questions: hi@dayou.tech*
