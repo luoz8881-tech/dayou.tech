@@ -3,10 +3,10 @@
 <style>
 .hero {
   text-align: center;
-  padding: 3.5rem 0 2rem;
+  padding: 4rem 0 2.5rem;
 }
 .hero h1 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: -0.03em;
   margin: 0 0 1rem;
@@ -15,7 +15,7 @@
   font-size: 1rem;
   color: var(--secondary);
   margin: 0 auto 2rem;
-  max-width: 420px;
+  max-width: 440px;
   line-height: 1.85;
 }
 .hero-btn {
@@ -28,12 +28,9 @@
   font-size: 0.92rem;
   font-weight: 500;
   text-decoration: none;
-  transition: border-color 0.2s, opacity 0.2s;
+  transition: border-color 0.2s;
 }
-.hero-btn:hover {
-  border-color: rgba(128,128,128,0.7);
-  opacity: 0.85;
-}
+.hero-btn:hover { border-color: rgba(128,128,128,0.7); }
 .hero-links {
   margin-top: 1.2rem;
   font-size: 0.88rem;
@@ -66,53 +63,30 @@
   margin-bottom: 1.4rem;
 }
 
-/* 五个方向 */
-.directions {
+.identity-cards {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   margin-bottom: 3.5rem;
 }
-@media (max-width: 640px) {
-  .directions { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 600px) {
+  .identity-cards { grid-template-columns: 1fr; }
 }
-@media (max-width: 400px) {
-  .directions { grid-template-columns: repeat(2, 1fr); }
-}
-.dir-card {
+.id-card {
   border: 1px solid rgba(128,128,128,0.1);
   border-radius: 10px;
-  padding: 14px 12px;
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
-  transition: border-color 0.2s, transform 0.2s;
-  display: block;
+  padding: 16px 14px;
 }
-.dir-card:hover {
-  border-color: rgba(128,128,128,0.25);
-  transform: translateY(-2px);
-}
-.dir-icon {
-  font-size: 1.3rem;
-  display: block;
-  margin-bottom: 6px;
-}
-.dir-name {
-  font-size: 0.78rem;
-  font-weight: 600;
-  display: block;
-}
+.id-card-icon { font-size: 1.3rem; display: block; margin-bottom: 6px; }
+.id-card-title { font-size: 0.85rem; font-weight: 600; margin-bottom: 4px; }
+.id-card-desc { font-size: 0.76rem; color: var(--secondary); opacity: 0.65; line-height: 1.5; }
 
-/* 文章列表 */
 .post-item {
   margin-bottom: 2rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid rgba(128,128,128,0.08);
 }
-.post-item:last-of-type {
-  border-bottom: none;
-}
+.post-item:last-of-type { border-bottom: none; }
 .post-cat {
   font-size: 0.7rem;
   font-weight: 600;
@@ -120,33 +94,13 @@
   text-transform: uppercase;
   opacity: 0.4;
   margin-bottom: 6px;
-  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-family: 'SF Mono', monospace;
 }
-.post-item h3 {
-  font-size: 1.08rem;
-  font-weight: 600;
-  margin: 0 0 0.3rem;
-  letter-spacing: -0.01em;
-}
-.post-item h3 a {
-  text-decoration: none;
-  color: var(--primary);
-}
+.post-item h3 { font-size: 1.05rem; font-weight: 600; margin: 0 0 0.3rem; }
+.post-item h3 a { text-decoration: none; color: var(--primary); }
 .post-item h3 a:hover { text-decoration: underline; }
-.post-item .desc {
-  color: var(--secondary);
-  font-size: 0.9rem;
-  margin: 0;
-  line-height: 1.65;
-  opacity: 0.8;
-}
-.post-item .meta {
-  color: var(--secondary);
-  font-size: 0.75rem;
-  margin-top: 0.4rem;
-  opacity: 0.4;
-  font-family: 'SF Mono', 'Fira Code', monospace;
-}
+.post-item .desc { color: var(--secondary); font-size: 0.9rem; margin: 0; line-height: 1.65; opacity: 0.8; }
+.post-item .meta { color: var(--secondary); font-size: 0.75rem; margin-top: 0.4rem; opacity: 0.4; font-family: 'SF Mono', monospace; }
 
 .view-all {
   display: inline-block;
@@ -159,95 +113,47 @@
 }
 .view-all:hover { opacity: 1; }
 
-/* 工具区 */
-.tools-section {
-  margin: 3.5rem 0 1rem;
-  padding-top: 2.5rem;
-  border-top: 1px solid rgba(128,128,128,0.1);
-}
-.tools-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin-top: 1.2rem;
-}
-@media (max-width: 520px) {
-  .tools-grid { grid-template-columns: repeat(2, 1fr); }
-}
-.tool-item {
-  padding: 14px 16px;
-  border-radius: 10px;
-  border: 1px solid rgba(128,128,128,0.1);
-  text-decoration: none;
-  color: inherit;
-  transition: border-color 0.2s, transform 0.2s;
-  display: block;
-}
-.tool-item:hover {
-  border-color: rgba(128,128,128,0.28);
-  transform: translateY(-1px);
-}
-.tool-name {
-  font-size: 0.88rem;
-  font-weight: 600;
-  margin-bottom: 4px;
-}
-.tool-desc {
-  font-size: 0.76rem;
-  color: var(--secondary);
-  opacity: 0.65;
-  line-height: 1.5;
-}
-
 .footer-note {
   text-align: center;
   color: var(--secondary);
   font-size: 0.8rem;
-  opacity: 0.35;
+  opacity: 0.3;
   margin: 2.5rem 0 1rem;
 }
 </style>
 
-<!-- Hero -->
 <div class="hero">
-  <h1>大有 · dayou.tech</h1>
-  <p>量化交易、AI 工具、前沿探索——<br>真实在做的事，真实踩过的坑，真实的思考。</p>
-  <a href="/posts/" class="hero-btn">开始阅读 →</a>
+  <h1>dayou.tech</h1>
+  <p>I lost years trading crypto with emotion.<br>Now I let AI do it — and document everything.</p>
+  <a href="/posts/" class="hero-btn">Read Posts →</a>
   <div class="hero-links">
-    <a href="/tools/">工具箱</a>
-    <a href="/about/">关于我</a>
+    <a href="/tools/">Tools</a>
+    <a href="/about/">About</a>
   </div>
 </div>
 
 <hr class="divider">
 
-<!-- 五个内容方向 -->
-<p class="section-label">内容方向</p>
-<div class="directions">
-  <a href="/categories/ai工具/" class="dir-card">
-    <span class="dir-icon">🛠️</span>
-    <span class="dir-name">AI 工具</span>
-  </a>
-  <a href="/categories/量化实战/" class="dir-card">
-    <span class="dir-icon">📈</span>
-    <span class="dir-name">量化实战</span>
-  </a>
-  <a href="/categories/技术实战/" class="dir-card">
-    <span class="dir-icon">⚙️</span>
-    <span class="dir-name">技术实战</span>
-  </a>
-  <a href="/categories/思考观察/" class="dir-card">
-    <span class="dir-icon">🔭</span>
-    <span class="dir-name">思考观察</span>
-  </a>
-  <a href="/categories/认知成长/" class="dir-card">
-    <span class="dir-icon">🌱</span>
-    <span class="dir-name">认知成长</span>
-  </a>
+<p class="section-label">Who I Am</p>
+<div class="identity-cards">
+  <div class="id-card">
+    <span class="id-card-icon">🤖</span>
+    <div class="id-card-title">AI Quant Builder</div>
+    <div class="id-card-desc">Building real crypto trading systems with AI — live, with real money</div>
+  </div>
+  <div class="id-card">
+    <span class="id-card-icon">📉</span>
+    <div class="id-card-title">Loss & Learn</div>
+    <div class="id-card-desc">Years of losses taught me what no book could — now I document it all</div>
+  </div>
+  <div class="id-card">
+    <span class="id-card-icon">🔭</span>
+    <div class="id-card-title">Independent Explorer</div>
+    <div class="id-card-desc">No institution, no fund — just curiosity, code and conviction</div>
+  </div>
 </div>
 
-<!-- 最新文章 -->
-<p class="section-label">最新文章</p>
+<p class="section-label">Latest Posts</p>
 
 {{- $pages := (where site.RegularPages "Section" "posts") }}
 {{- range first 5 $pages }}
@@ -259,43 +165,12 @@
   {{- with .Params.description }}
   <p class="desc">{{ . }}</p>
   {{- end }}
-  <div class="meta">{{ .Date.Format "2006-01-02" }}</div>
+  <div class="meta">{{ .Date.Format "Jan 2, 2006" }}</div>
 </div>
 {{- end }}
 
-<a href="/posts/" class="view-all">查看全部文章 →</a>
+<a href="/posts/" class="view-all">All posts →</a>
 
-<!-- 工具箱 -->
-<div class="tools-section">
-  <p class="section-label">我在用的工具</p>
-  <div class="tools-grid">
-    <a href="https://openclaw.ai" target="_blank" rel="noopener" class="tool-item">
-      <div class="tool-name">🦞 OpenClaw</div>
-      <div class="tool-desc">AI 管家，7×24 自动运行</div>
-    </a>
-    <a href="https://perplexity.ai" target="_blank" rel="noopener" class="tool-item">
-      <div class="tool-name">🔍 Perplexity</div>
-      <div class="tool-desc">带引用的 AI 搜索引擎</div>
-    </a>
-    <a href="https://claude.ai" target="_blank" rel="noopener" class="tool-item">
-      <div class="tool-name">✦ Claude</div>
-      <div class="tool-desc">写作分析首选</div>
-    </a>
-    <a href="https://n8n.io" target="_blank" rel="noopener" class="tool-item">
-      <div class="tool-name">⚡ n8n</div>
-      <div class="tool-desc">开源自动化工作流</div>
-    </a>
-    <a href="https://bybit.com" target="_blank" rel="noopener" class="tool-item">
-      <div class="tool-name">📊 Bybit</div>
-      <div class="tool-desc">量化交易执行平台</div>
-    </a>
-    <a href="/tools/" class="tool-item">
-      <div class="tool-name">→ 查看全部</div>
-      <div class="tool-desc">完整工具箱</div>
-    </a>
-  </div>
-</div>
-
-<p class="footer-note">技术 · 温度 · 思考 · dayou.tech</p>
+<p class="footer-note">Quant Trading · AI Tools · Thinking · dayou.tech</p>
 
 {{- end }}

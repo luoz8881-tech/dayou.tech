@@ -1,5 +1,5 @@
 ---
-title: 关于
+title: About
 layout: single
 ShowReadingTime: false
 ShowShareButtons: false
@@ -7,32 +7,34 @@ ShowBreadCrumbs: false
 ShowToc: false
 ---
 
-## 我是大有
+## Who is dayou
 
-2026年初，我在谷歌云上部署了第一只 OpenClaw。
+I spent years trading crypto the wrong way — driven by emotion, greed, and fear.
 
-从那天起，我开始认真回答一个问题：**普通人，在 AI 时代能做到什么程度？**
+In early 2026, I stopped trying to control my instincts and started building systems that don't have any. I deployed an AI-powered quantitative trading system on a cloud server, and it's been running live ever since.
 
-这个博客是我边做边找答案的过程。量化交易、AI 工具、前沿技术、哲学思考——都在这里，真实记录，不加滤镜。
-
----
-
-## 关于这个博客
-
-不写"AI 能做什么"，只写"我用 AI 做了什么，结果怎样"。
-
-亏损了会写，踩坑了会写，认知被推翻了也会写。失败的记录和成功的记录，同样有价值。
-
-内容分五个方向：**AI 工具 · 量化实战 · 技术实战 · 思考观察 · 认知成长**
+This blog is the honest record of that journey.
 
 ---
 
-## 原则
+## What this blog is about
 
-- 写自己经历过的，不搬运
-- AI 辅助创作，人工审核把关
-- 判断基于事实，不带立场
+Not theory. Not "top 10 crypto tips."
+
+Real systems, real trades, real losses — and what I'm learning from all of it.
+
+Three directions:
+
+- **Quant Trading** — How I build, test and run AI trading systems on crypto markets
+- **AI Tools** — The tools that make this possible: agents, automation, workflows
+- **Thinking** — Observations on markets, technology and the human side of trading
 
 ---
 
-邮件：**hi@dayou.tech**
+## Disclaimer
+
+*All content is for informational purposes only and does not constitute financial or investment advice. Cryptocurrency trading involves significant risk of loss. Trade responsibly.*
+
+---
+
+Contact: **hi@dayou.tech**

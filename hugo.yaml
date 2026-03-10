@@ -1,5 +1,5 @@
 baseURL: "https://dayou.tech/"
-languageCode: zh-cn
+languageCode: en-us
 title: dayou.tech
 theme: PaperMod
 
@@ -33,19 +33,19 @@ params:
 menu:
   main:
     - identifier: posts
-      name: 文章
+      name: Posts
       url: /posts/
       weight: 10
     - identifier: tools
-      name: 工具箱
+      name: Tools
       url: /tools/
       weight: 20
     - identifier: search
-      name: 搜索
+      name: Search
       url: /search/
       weight: 30
     - identifier: about
-      name: 关于
+      name: About
       url: /about/
       weight: 40
 
