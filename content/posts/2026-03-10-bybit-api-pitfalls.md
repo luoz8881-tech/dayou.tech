@@ -123,4 +123,10 @@ Bybit Taker 往返手续费 0.11%。高频策略每天 10 次开平仓：
 - [回归预测为什么做不了交易信号](/posts/2026-03-10-regression-vs-classification/)
 
 ---
+
+**关于服务器：**
+
+量化系统需要 24 小时不间断运行的服务器。我用[阿里云 ECS](https://www.aliyun.com/daily-act/ecs/activity_selection?userCode=132pbq5s)，稳定性好，国内延迟低，对 Bybit API 的响应速度也没有影响。新用户首购有优惠。
+
+---
 *有问题？发邮件至 hi@dayou.tech 或在下方留言*

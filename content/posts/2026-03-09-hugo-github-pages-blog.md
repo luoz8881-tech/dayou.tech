@@ -265,4 +265,10 @@ A：如果你需要评论系统、会员功能、电商功能，用 WordPress。
 - [n8n 入门：用自动化工作流消灭重复劳动](/posts/2026-03-09-n8n-automation-guide/)
 
 ---
+
+**如果你想更进一步：**
+
+GitHub Pages 适合个人博客，但如果你需要部署 AI 应用、量化系统或者自建服务，云服务器是更好的选择。我自己的 AI 管家和量化系统都跑在[阿里云 ECS](https://www.aliyun.com/daily-act/ecs/activity_selection?userCode=132pbq5s) 上，新用户首购价格很低，稳定性好。
+
+---
 *有问题？在下方留言，或发邮件至 hi@dayou.tech*
