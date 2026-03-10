@@ -87,6 +87,8 @@ The system is running. The signals are live.
 
 Whether it works at scale — that's what the next few months will answer.
 
+**Want to trade options yourself?** The exchange I use: [Bybit](https://partner.bybit.com/b/156103) — deep liquidity, never goes down in volatile markets. New users get up to **$30,000 USDT** in rewards.
+
 *→ dayou.tech*
 
 ---
