@@ -52,6 +52,8 @@ Sign up through my link and you unlock up to **$30,000 USDT** in rewards + **30%
 **Step 1: Register**
 Use Gmail or iCloud for your email. Fill in details, complete verification code. Done.
 
+⚠️ **To apply for an API key later: use desktop browser or mobile browser — not the mobile app.**
+
 **Step 2: Secure your account**
 Bind your phone number. Enable Google 2FA. Do this before anything else.
 

@@ -23,6 +23,8 @@ An API Key is how that happens. Your program uses it to place orders, check posi
 
 Log in to Bybit → Profile icon (top right) → Account & Security → API Management → Create New Key → **System-generated API Key**
 
+⚠️ **Use desktop browser or mobile browser — the Bybit mobile app does not support API key creation.**
+
 ---
 
 ## Step 2: Set Permissions
@@ -111,7 +113,6 @@ Next: pulling historical market data — the first step in building your trading
 
 ---
 
-Don't have a Bybit account yet? [Sign up here](https://partner.bybit.com/b/156103) — new users get up to **$30,000 USDT** in rewards.
 
 ---
 
