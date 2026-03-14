@@ -87,6 +87,4 @@ Three months from now I'll know if any of this actually works. Right now, the on
 
 ---
 
-*I trade on Bybit — if you're exploring crypto derivatives, [here's my referral link](https://partner.bybit.com/b/156103).*
-
 *This content is for informational purposes only and does not constitute financial or investment advice. Cryptocurrency trading involves significant risk of loss. Trade responsibly.*

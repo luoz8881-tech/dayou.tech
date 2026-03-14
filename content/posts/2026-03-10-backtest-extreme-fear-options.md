@@ -92,6 +92,4 @@ The system is watching. When the confluence returns, it will act.
 
 *All content is for informational purposes only. Cryptocurrency trading involves significant risk. Trade responsibly.*
 
-**Want to trade options yourself?** The exchange I use: [Bybit](https://partner.bybit.com/b/156103) — deep liquidity, never goes down in volatile markets. New users get up to **$30,000 USDT** in rewards.
-
 *→ dayou.tech*
